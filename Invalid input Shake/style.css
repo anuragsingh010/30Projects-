@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #6b8195; /* Light blue color */
+}
+
+form {
+    width: min(90%, 25em);
+    background-color: rgb(44, 214, 214);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 5em 2em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 20px rgba(35, 196, 3, 0.932);
+}
+
+.error-message {
+    color: rgb(208, 16, 22);
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    color: rgb(28, 185, 28);
+    border: none;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+}
+
+input {
+    background-color: #c8cbcb;
+    color: black; /* Changed from red for better readability */
+    border: 1px solid darkblue;
+}
+
+button {
+    background-color: #0080ff;
+    margin-top: 2.5em;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-5px);
+    }
+    50% {
+        transform: translate(5px);
+    }
+    75% {
+        transform: translate(-5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
